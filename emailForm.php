@@ -24,12 +24,12 @@
         if (isset($_POST['email']))
         {
             // in the quotations enter the email you want to send the form data to
-            $to = "jg0928330@otc.edu";
+            $to = "info@otcwebdev.net";
             // Change this to reflect what you want to appear in the Subject line of the email
             $subject = "Get a Quote!";
 
             //*************  DON'T CHANGE THIS!!!!!  ***************************************
-            $from = "otcwebdev@gmail.com";
+            $from = "otcwebdev.net@";
 
 
             // To send HTML mail, the Content-type header must be set

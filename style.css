@@ -1,17 +1,41 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
 }
 
 body {
   background-color: #101010 !important;
+  margin: auto;
+}
+
+html,body{
+    overflow-x: hidden;
 }
 
 /*NAV*/
 nav {
   width: auto;
   background-color: #0F0F0F !important;
+}
+
+.ExtraNav > a:link{
+  padding: 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.1vw;
+}
+.dropdown {
+  display: none;
+}
+.begone {
+  display: none;
+}
+.ExtraNav > a{
+  color: white;
+}
+
+.ExtraNav > a:hover{
+  background: red;
 }
 
 .Flexthis {
@@ -23,8 +47,17 @@ nav {
 }
 
 .logo {
-  width: 50%;
-  margin-left: 1.5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  padding-left: 1.5%;
+  padding-right:1.5%;
+}
+
+
+.ExtraNav {
+  width: 100%;
 }
 
 .fa-brands {
@@ -33,14 +66,19 @@ nav {
 .rightside {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-right: 1.5%;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width:auto;
 }
 .socialmedia {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 5px;
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.thisisfb {
+  padding-right: 5%;
 }
 
 
@@ -48,18 +86,63 @@ nav {
   color: white;
   list-style-type: none;
   text-decoration: none;
-}
-
-.quote {
   padding: 8px;
   border-radius: 3px;
   background-color: red !important;
+  width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 988px) {
+  .quote {
+    font-size: 1vw;
+  }
+
+  .fa-brands {
+    font-size: 150%;
+  }
+}
+
+
+@media screen and (max-width: 830px) {
   .logo img {
     width: 70%;
   }
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 80%;
+  }
+  .dropdown-menu li {
+    padding-top: 15px;
+  }
+  .dropdown-menu li > a{
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .dropdown-menu li > a:hover {
+    background-color: red;
+  }
+  .rightside {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+  }
+  .logoimg {
+    width: 80%;
+  }
+  .ExtraNav {
+    display: none;
+  }
+
+
+    .Flexthis > .dropdown {
+      margin-right: 5%;
+    }
+
   .quote {
     font-size: 11px;
   }
@@ -73,8 +156,6 @@ nav {
   height: 20%;
   width: 100%;
 }
-
-
 
 .carousel {
   margin: auto;
@@ -102,9 +183,16 @@ table th{
   border-right: 3px #FF0000 solid;
   padding-top: 5px;
 }
+}
 
 th .fas {
   font-size: 40px;
+}
+
+@media screen and (max-width: 768px){
+  table th{
+    font-size: 2vw;
+  }
 }
 
 /*Cards*/
@@ -143,6 +231,7 @@ th .fas {
   padding-left: 10px;
   padding-right: 10px;
   display: inline-block;
+  text-align: center;
   }
 
 .cardx img {
@@ -155,7 +244,12 @@ th .fas {
   padding-bottom: 10px;
   margin-bottom: 15px;
   width: 80%;
+  color:white;
   border-bottom: 3px #FF0000 solid;
+}
+
+.phonebrand h3{
+  color:white;
 }
 
 .phones {
@@ -166,6 +260,8 @@ th .fas {
   width: 50%;
   text-align: center;
   padding-bottom: 30px;
+  margin: auto;
+  text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -187,13 +283,20 @@ th .fas {
 
 @media screen and (max-width:768px) {
   .scrolling-wrapper .cardx {
-    width: 70%;
+    width: 50%;
   }
   .phonebrand {
     width: 30%;
   }
+  .phonebrand h3{
+    font-size: 2vw;
+  }
   .cardx img {
     width: 30%;
+  }
+  .cardx {
+    padding-left: 2px;
+    padding-right: 2px;
   }
 }
 
@@ -211,6 +314,7 @@ th .fas {
 }
 
 .hours li{
+  color: white;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 1.1vw;
@@ -240,6 +344,8 @@ th .fas {
   }
 
 }
+
+
 /*Contacts & Location*/
 
 .cnl {
@@ -262,6 +368,10 @@ th .fas {
   align-items: center;
 }
 
+.phoneandmail p{
+  color:white;
+}
+
 a .fas {
   font-size: 40px;
 }
@@ -276,7 +386,7 @@ iframe {
 }
 @media screen and (max-width:768px) {
   iframe {
-    width: 90%;
+    height: 90%;
   }
   .location {
     text-align: right;
@@ -284,6 +394,13 @@ iframe {
   .phoneandmail{
     font-size: 10px;
   }
+  a .fas {
+    font-size: 250%;
+  }
+  .phoneandmail {
+    text-align: center;
+  }
+
 }
 
 @media screen and (max-width:576px){
@@ -310,6 +427,10 @@ input[type='number'] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+form label{
+  color: white;
 }
 
 .fcontainer {
@@ -366,6 +487,9 @@ footer {
   padding-right: 10px;
 }
 
+.finalclass span{
+  color: white;
+}
 .actuallyitsthisone a{
   padding-left: 5px;
   padding-right: 5px;
