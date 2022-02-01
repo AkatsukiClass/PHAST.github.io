@@ -200,17 +200,30 @@ nav {
 @media screen and (max-width: 876px){
 
   .carousel-caption h5{
-    font-size: 3vw;
+    text-shadow: -5px -3px 14px black;
+    font-weight: bold;
+    font-size: 2.5vw;
   }
 
   .carousel-caption p {
-    font-size: 2.5vw;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+  .caption2 {
+    top:55%;
   }
 }
 
 @media screen and (max-width: 620px){
   .caption2, .caption1 {
     top: 50%;
+  }
+  .carousel-caption h5{
+    font-size: 3vw;
+  }
+
+  .carousel-caption p {
+    font-size: 2.5vw;
   }
 }
 
