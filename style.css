@@ -289,6 +289,25 @@ main {
   }
 }
 
+@media screen and (max-width:576px) {
+  .scrollthis img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .scrollthis {
+    min-width: 200px;
+    height: 333px;
+  }
+  .scrollersec {
+    width: 70%;
+    right: 0.04%;
+  }
+  .scrollerSpan:nth-of-type(2) {
+    left: 92.90%;
+  }
+}
+
 
 /*Types of phone side scrolling?*/
 
@@ -414,7 +433,7 @@ main {
 
 @media screen and (max-width:768px) {
   .hours li{
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
 }
@@ -475,7 +494,7 @@ iframe {
     text-align: center;
   }
   .phoneandmail p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
