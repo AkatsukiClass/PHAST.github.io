@@ -258,7 +258,7 @@ main {
   margin: auto;
   display: flex;
   position: relative;
-  right: 1.25%;
+  right: 0.06%;
   justify-content: flex-start;
   overflow: hidden !important;
 
@@ -283,6 +283,11 @@ main {
   height: 333px;
 }
 
+@media screen and (max-width:1105px){
+  .scrollerSpan:nth-of-type(2) {
+    left: 94.90%;
+  }
+}
 
 
 /*Types of phone side scrolling?*/
