@@ -199,9 +199,6 @@ nav {
 
 @media screen and (max-width: 876px){
 
-  .caption2, .caption1 {
-    top: 55%;
-  }
   .carousel-caption h5{
     font-size: 3vw;
   }
@@ -211,20 +208,6 @@ nav {
   }
 }
 
-@media screen and (max-width: 620px){
-  .caption2, .caption1 {
-    top: 50%;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .caption2, .caption1{
-    top: 45%;
-  }
-  .caption3 {
-    top: 50%;
-  }
-}
 
 /*Table*/
 
@@ -436,8 +419,6 @@ main {
 .aboutus {
   margin: auto;
   width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .hours li{
