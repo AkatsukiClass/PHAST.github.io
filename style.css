@@ -208,6 +208,20 @@ nav {
   }
 }
 
+@media screen and (max-width: 620px){
+  .caption2, .caption1 {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .caption2, .caption1{
+    top: 45%;
+  }
+  .caption3 {
+    top: 50%;
+  }
+}
 
 /*Table*/
 
