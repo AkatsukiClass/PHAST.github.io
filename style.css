@@ -4,6 +4,7 @@
 }
 
 body {
+  position: relative;
   background-color: #101010 !important;
   margin: auto;
 }
@@ -14,6 +15,8 @@ html,body{
 
 /*NAV*/
 nav {
+  position: relative;
+  z-index: 15;
   width: auto;
   background-color: #0F0F0F !important;
 }
@@ -32,6 +35,7 @@ nav {
 }
 .ExtraNav > a{
   color: white;
+  text-align: center;
 }
 
 .ExtraNav > a:hover{
@@ -153,17 +157,39 @@ nav {
 /*Carousel*/
 
 .carousel-item img {
-  height: 20%;
   width: 100%;
 }
 
-.carousel {
-  margin: auto;
-}
 .carousel-item .carousel-caption {
-  background-color: #1E1E1E;
   margin-bottom: 5%;
 }
+
+.carousel {
+  width: 100%;
+  margin:auto;
+}
+
+.caption1 {
+  position: absolute;
+  top: 75%;
+  text-shadow: -5px -3px 10px black;
+}
+
+.caption2 {
+  text-shadow: -5px -3px 10px black;
+  position: absolute;
+  top: 75%;
+}
+
+.carousel-caption h5{
+  font-size: 2vw;
+}
+
+.carousel-caption p {
+  font-size: 1.5vw;
+}
+
+
 
 
 /*Table*/
@@ -193,29 +219,72 @@ th .fas {
   table th{
     font-size: 2vw;
   }
+  .carousel {
+    width: 100%;
+  }
+  .carousel-item img {
+    height: 100%;
+  }
 }
 
-/*Cards*/
+/*Be4 and After*/
 
-.later {
-  margin: auto;
-  width: 80%;
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
-.item1 {
-  position: relative;
+main {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 3px #FF0000 solid;
-  margin-bottom: 15px;
-  margin-top: 100px;
-  grid-column-start: 1;
-  grid-column-end: 5;
+  height: 450px;
+  margin: auto;
+  overflow: hidden !important;
+  position: relative;
 }
+
+.scrollerSpan {
+  position: absolute;
+  top: 50%;
+  font-size: 60px;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+  left: .5%;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.scrollerSpan:nth-of-type(2) {
+  left: 98%;
+  text-align: right;
+}
+.scrollersec {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  position: relative;
+  right: 1.25%;
+  justify-content: flex-start;
+  overflow: hidden !important;
+
+}
+.scrollersec::-webkit-scrollbar {
+  visibility: hidden;
+}
+.scrollthis {
+  min-width: 300px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.scrollthis img {
+  width: 250px;
+  height: 333px;
+}
+
+
+
 /*Types of phone side scrolling?*/
 
 
@@ -289,10 +358,10 @@ th .fas {
     width: 30%;
   }
   .phonebrand h3{
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   .cardx img {
-    width: 30%;
+    width: 50%;
   }
   .cardx {
     padding-left: 2px;
@@ -340,7 +409,7 @@ th .fas {
 
 @media screen and (max-width:768px) {
   .hours li{
-    font-size: 12px;
+    font-size: 3vw;
   }
 
 }
@@ -400,7 +469,9 @@ iframe {
   .phoneandmail {
     text-align: center;
   }
-
+  .phoneandmail p {
+    font-size: 3vw;
+  }
 }
 
 @media screen and (max-width:576px){
@@ -464,6 +535,16 @@ form #message {
 form .buttondiv {
   text-align: center;
 }
+
+@media screen and (max-width:576px){
+  label {
+    font-size: 3vw;
+  }
+  input {
+    width: 325px;
+  }
+}
+
 /*footer*/
 
 footer {
