@@ -273,132 +273,50 @@ th .fas {
 
 /*Be4 and After*/
 
-main {
-  width: 100%;
-  height: 450px;
+.owl-carousel {
+  width: 80% !important;
   margin: auto;
-  overflow: hidden !important;
-  position: relative;
+  text-align: center;
 }
 
-.scrollerSpan {
-  position: absolute;
-  top: 50%;
-  font-size: 60px;
-  font-weight: bold;
-  color: red;
-  cursor: pointer;
-  left: .5%;
-  z-index: 1;
-  overflow-x: hidden;
-}
-.scrollerSpan:nth-of-type(2) {
-  left: 98%;
-  text-align: right;
-}
-.scrollersec {
+.owl-carousel .item > .lenght {
   width: 80%;
-  height: auto;
-  margin: auto;
+}
+.owl-carousel .item {
   display: flex;
-  position: relative;
-  right: 0.06%;
-  justify-content: flex-start;
-  overflow: hidden !important;
-
-}
-.scrollersec::-webkit-scrollbar {
-  visibility: hidden;
-}
-.scrollthis {
-  min-width: 300px;
-  height: 400px;
-  margin: auto;
-  position: relative;
-  text-align: center;
-  padding-top: 60px;
-  color: white;
-  transition: 0.5s;
-  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.scrollthis img {
-  width: 250px;
-  height: 333px;
+.owl-theme {
+  color: red;
+  font-size: 35px;
 }
 
-@media screen and (max-width:1105px){
-  .scrollerSpan:nth-of-type(2) {
-    left: 94.90%;
-  }
-}
-
-@media screen and (max-width:576px) {
-  .scrollthis img {
-    width: 90%;
-    height: 90%;
-  }
-
-  .scrollthis {
-    min-width: 200px;
-    height: 333px;
-  }
-  .scrollersec {
-    width: 70%;
-    right: 0.04%;
-  }
-  .scrollerSpan:nth-of-type(2) {
-    left: 92.90%;
-  }
-}
-
-
-/*Types of phone side scrolling?*/
-
-
-.scrolling-wrapper {
-  margin: auto;
-  padding-top: 25px;
-  width: 80%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-.cardx {
-  padding-left: 10px;
-  padding-right: 10px;
-  display: inline-block;
-  text-align: center;
-  }
-
-.cardx img {
+.owl-carousel .item > .ToPhone {
   width: 50%;
+}
+
+.item h5 {
+  margin-top: 5px;
+  margin-bottom: -25px
+}
+
+/*Scroll + Header*/
+
+.phones {
+  margin-top: 50px;
 }
 
 .testhead {
   margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   width: 80%;
   color:white;
   border-bottom: 3px #FF0000 solid;
-}
-
-.phonebrand h3{
-  color:white;
-}
-
-.phones {
-  margin-top: 5%;
-}
-
-.phonebrand {
-  width: 50%;
-  text-align: center;
-  padding-bottom: 30px;
-  margin: auto;
-  text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -418,24 +336,6 @@ main {
   background: red;
 }
 
-@media screen and (max-width:768px) {
-  .scrolling-wrapper .cardx {
-    width: 50%;
-  }
-  .phonebrand {
-    width: 30%;
-  }
-  .phonebrand h3{
-    font-size: 2.5vw;
-  }
-  .cardx img {
-    width: 50%;
-  }
-  .cardx {
-    padding-left: 2px;
-    padding-right: 2px;
-  }
-}
 
 /*Hours of Operation*/
 
@@ -444,8 +344,8 @@ main {
 }
 
 .aboutus {
-  margin: auto;
-  width: 95%;
+  margin-left: auto;
+  width: 90%;
 }
 
 .hours li{
