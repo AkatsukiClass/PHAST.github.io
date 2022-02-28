@@ -470,6 +470,12 @@ form label{
   color: white;
 }
 
+input, select, textarea {
+  color: white;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
 .fcontainer {
   border-top: 3px red solid;
   display: flex;

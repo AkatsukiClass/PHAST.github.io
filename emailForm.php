@@ -15,7 +15,7 @@
 <body>
 <img src="Phast/logo.png" alt="Phast Phone Logo" width=700>
 
-  <h1>Email Successfully Sent!</h1>
+  <h1 style="color:white;">Email Successfully Sent!</h1>
   <nav>
     <a href=index.html><h3>Press me to Go Back</h3></a>
   </nav>
@@ -46,11 +46,10 @@
             // Add to this message your content - follow the pattern below
             // use   $_POST['datafield']    this datafield is the name attribute in  your form field!
             $message = "<html><body>";
-            $message .= "<h1 style='color:#f40;'>Name: " . $_POST['name'] . "</h1>";
-            $message .= "<h1 style='color:#f40;'>Email: " . $_POST['email'] . "</h1>";
-            $message .= "<h1 style='color:#f40;'>Number: " . $_POST['number'] . "</h1>";
-            $message .= "<h1 style='color:#f40;'>Problem: " . $_POST['message'] . "</h1>";
-            $message .= "</body></html>";
+            $message .= "<h2 style='color:black; display:inline;'>Name: " . "</h2>" . "<h3 style='display:inline;'>" . $_POST['name'] . "</h3>";
+            $message .= "<h2 style='color:black; display:inline;'>Email: " . "</h2>" . "<h3 style='display:inline;'>" . $_POST['email'] . "</h3>";
+            $message .= "<h2 style='color:black; display:inline;'>Number: " . "</h2>" . "<h3 style='display:inline;'>" . $_POST['number'] . "</h3>";
+            $message .= "<h2 style='color:black; display:inline;'>Problem: " . "</h2>" . "<h3 style='display:inline;'>" . $_POST['message'] . "</h3>";
 
             mail($to,$subject, $message ,$headers);
 
