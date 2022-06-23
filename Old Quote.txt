@@ -1,0 +1,24 @@
+<!--Forms hopefully-->
+<div class="fcontainer" id="quote">
+  <div class="testhead aboutheader forquote">
+    <h1>Get a Quote!</h1>
+  </div>
+  <form  action="emailForm.php" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" required><br>
+
+    <label for="number">Number:</label><br>
+    <input type="number" id="number" name="number"><br>
+
+    <label for="message">Message:</label><br>
+    <input type="text" id="message" name="message" required><br>
+
+    <div class=buttondiv>
+    <input class="btn btn-dark" type=submit value="Get Quote">
+    </div>
+  </form>
+
+</div>

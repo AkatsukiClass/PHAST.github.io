@@ -1,0 +1,59 @@
+<style>
+
+body {
+background-color: #101010 ;
+color: white;
+margin: auto;
+}
+
+.section-title {background: black; }
+
+body p {color: white;}
+
+.btn-group > btn-default {border-color: white;}
+
+
+@media screen and (max-width:768px) {body { width: 85% ; }}
+
+.custom-label, h5 { color: white; }
+
+.icon {color: red; }
+
+.form-actions {background-color: #101010 ; }
+
+.section-title h5 {color: white; }
+
+.data-collection-input {
+background-color: black;
+color: white;}
+
+.btn-primary {
+background-color: #FF0000;
+border-color: #FF0000; }
+
+.btn-primary:hover {background-color: #450304; }
+.section-content {
+background-color: #101010 ;}
+
+.dropdown-toggle {
+background-color: black ; }
+
+.btn-group > .active {
+background-color: red;
+border-color: red; }
+
+
+.contact_info_left, .contact_info_right > .input {
+color:white;
+}
+
+.fa-radio-input-container .radio-option > .fa-radio-button-case { border: 2px solid black;  }
+.fa-radio-input-container .radio-option > .fa-radio-button-case > .fa-check {color: black; }
+.yes-no-question .fa-radio-button > .fa-radio-input-container > .radio-option.selected {background-color: red; }
+
+.form-control {background-color: black; color:white;}
+.dropdown-menu {background-color: black;}
+
+.btn-default {color:white; background-color:black; border-color: red;}
+
+</style>
